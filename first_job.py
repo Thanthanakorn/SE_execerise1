@@ -1,9 +1,10 @@
-import sys,statistics
+import sys
+import statistics
 
 filename = sys.argv[1]
 text = open(filename).read()
 data = []
-with open(r'stuff.txt') as f:
+with open(filename) as f:
     for line in f:
         fields = line.split()
         rowdata = map(float, fields)
